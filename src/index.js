@@ -1,17 +1,43 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+// const sName = 'Yadav';
+
+// ReactDOM.render(
+//   <>
+//   <h1>Manish {sName} Netflix Top 5 web Series</h1>
+//   <p>Actually Thay are very famous in all over world.</p>
+//   <ol>
+//     <li>GOT</li>
+//     <li>Dark</li>
+//     <li>The Robot</li>
+//     <li>Rich man</li>
+//     <li>Famous</li>
+//   </ol>
+//   </>,
+//   document.getElementById('root')
+// );
+
+ReactDOM.render(
+  <>
+    <div className='heading'>
+        <h1>My Beautiful image gallary.</h1>
+    </div>
+    <div className='imagesize'>
+      <div className='gallery'>
+        <img src="https://picsum.photos/200/300" alt="randomImage" />
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div className='gallery'>
+        <img src="https://picsum.photos/250/300" alt="randomImage" />
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      <div className='gallery'>
+        <img src="https://picsum.photos/300/300" alt="randomImage" />
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+  </>,
+  document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
